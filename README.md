@@ -1,84 +1,125 @@
-# 🛴 Urban Scooter – Quality Assurance (QA) Project
+# 🛴 Urban Scooter — Full QA Cycle
 
-This repository contains the test artifacts and documentation generated during the final quality assurance project for the **Urban Scooter** application, a modern electric scooter rental service.
+**TripleTen QA Engineering Bootcamp · Cohort 23 · Proyecto Final**
+👤 Luis Manco · Medellín, Colombia
 
-The goal of this project is to showcase a systematic and professional approach to software testing, covering web, mobile, and API layers—from initial planning to defect reporting.
+[![Web](https://img.shields.io/badge/Web-Manual%20Testing-2E5FA3?style=flat-square)](.)
+[![Mobile](https://img.shields.io/badge/Mobile-Android-43B02A?style=flat-square&logo=android)](.)
+[![API](https://img.shields.io/badge/API-Postman-FF6C37?style=flat-square&logo=postman)](.)
+[![SQL](https://img.shields.io/badge/SQL-PostgreSQL-336791?style=flat-square&logo=postgresql)](.)
+[![Status](https://img.shields.io/badge/Status-Complete-green?style=flat-square)](.)
 
----
-
-## 💡 Skills & Competencies Demonstrated
-
-✅ **Requirements Analysis & Test Design:**  
-Interpreted technical specifications to craft an effective test strategy.
-
-✅ **Test Case Development & Execution:**  
-Designed detailed test cases applying techniques such as **Equivalence Partitioning** and **Boundary Value Analysis**.
-
-✅ **Web, Mobile & API Testing:**  
-Practical experience validating multiple layers of a modern application.
-
-✅ **Database Verification (SQL):**  
-Created SQL queries to validate data integrity across transactions.
-
-✅ **Defect Reporting & Tracking:**  
-Produced clear and concise defect documentation to facilitate resolution.
+🇺🇸 [English](#-english) · 🇪🇸 [Español](#-español)
 
 ---
 
-## 🗂️ Analysis & Planning Phase
+## 🇺🇸 English
 
-Before writing a single test, a thorough requirements analysis was conducted to break down the application's core functionality.  
-A mind map was created as a visual tool to illustrate user flows, interdependencies, and critical test areas.
+### Project Overview
+
+This repository contains the complete QA cycle for **Urban Scooter**, a modern electric scooter rental service. The project covers web, mobile, and API testing — from requirements analysis and test design through execution and defect reporting.
+
+This is the **final project** of the TripleTen QA Engineering Bootcamp, demonstrating a full-lifecycle QA process across multiple platforms.
+
+### Skills Demonstrated
+
+| Skill | Applied In |
+|-------|-----------|
+| ✅ Requirements Analysis | Docs review → mind map → test strategy |
+| ✅ Test Design | Equivalence Partitioning, Boundary Value Analysis |
+| ✅ Web Testing | Functional UI validation, form field testing |
+| ✅ Mobile Testing | Native Android app, emulator-based testing |
+| ✅ API Testing | Postman, REST endpoints, status code validation |
+| ✅ SQL | Data integrity queries, transaction verification |
+| ✅ Defect Reporting | Professional bug reports with steps to reproduce |
+
+### Repository Structure
+
+```
+📦 urban-scooter-qa-project/
+├── docs/               # Requirements & analysis docs
+│   ├── requirements-backend.pdf
+│   ├── requirements-mobile.pdf
+│   └── requirements-web.pdf
+├── test-artifacts/     # All test materials
+│   ├── api-testing/        # API test cases (.csv, .xlsx)
+│   ├── mobile-tests/       # Mobile test cases (.csv, .xlsx)
+│   └── test-cases/         # Web test cases & checklists
+│       ├── data_validation/
+│       └── testing_checklist/
+├── bug-reports/        # Defect documentation
+│   ├── api-testing-bugs/
+│   ├── mobile-tests-bugs/
+│   └── test-cases-bugs/
+└── README.md
+```
+
+### What Was Tested
+
+| Layer | Application | Tools |
+|-------|------------|-------|
+| **Web** | Urban Scooter web app — order status, rental form, recipient form | Chrome, Excel |
+| **Mobile** | Urban Scooter native Android app | Android Studio, AVD |
+| **API** | Urban Scooter backend endpoints | Postman |
+| **Database** | Data integrity after business transactions | SQL (PostgreSQL) |
+
+### Key Findings
+
+- Designed and executed tests across **3 application layers** (web, mobile, API)
+- Applied **equivalence partitioning** and **boundary value analysis** to form fields and API inputs
+- Created **SQL queries** to verify database state after CRUD operations
+- Documented all defects in structured bug reports with environment details, steps to reproduce, and expected vs. actual results
 
 ---
 
-## 📁 Repository Content & Structure
+## 🇪🇸 Español
 
-The project is organized into the following directories to ensure clear and logical navigation of all test assets:
+### Descripción del Proyecto
+
+Este repositorio contiene el ciclo completo de QA para **Urban Scooter**, un servicio moderno de alquiler de scooters eléctricos. El proyecto cubre pruebas web, móviles y de API — desde el análisis de requisitos y diseño de pruebas hasta la ejecución y reporte de defectos.
+
+Este es el **proyecto final** del TripleTen QA Engineering Bootcamp, demostrando un proceso de QA de ciclo completo a través de múltiples plataformas.
+
+### Habilidades Demostradas
+
+| Habilidad | Aplicada en |
+|-----------|-------------|
+| ✅ Análisis de requisitos | Revisión de docs → mapa mental → estrategia de pruebas |
+| ✅ Diseño de pruebas | Partición de equivalencia, Análisis de valores límite |
+| ✅ Pruebas web | Validación funcional de UI, campos de formulario |
+| ✅ Pruebas móviles | App Android nativa, pruebas en emulador |
+| ✅ Pruebas de API | Postman, endpoints REST, validación de códigos de estado |
+| ✅ SQL | Consultas de integridad de datos, verificación de transacciones |
+| ✅ Reporte de defectos | Informes profesionales con pasos de reproducción |
+
+### Estructura del Repositorio
+
+```
+📦 urban-scooter-qa-project/
+├── docs/               # Documentos de requisitos y análisis
+├── test-artifacts/     # Todos los materiales de prueba
+│   ├── api-testing/        # Casos de prueba de API
+│   ├── mobile-tests/       # Casos de prueba móviles
+│   └── test-cases/         # Casos de prueba web y checklists
+└── bug-reports/        # Documentación de defectos
+```
+
+### Qué se Probó
+
+| Capa | Aplicación | Herramientas |
+|------|-----------|-------------|
+| **Web** | App web Urban Scooter | Chrome, Excel |
+| **Móvil** | App Android nativa | Android Studio, AVD |
+| **API** | Endpoints del backend | Postman |
+| **Base de datos** | Integridad de datos | SQL (PostgreSQL) |
+
+### Hallazgos Clave
+
+- Pruebas diseñadas y ejecutadas en **3 capas de aplicación** (web, móvil, API)
+- Aplicación de **partición de equivalencia** y **análisis de valores límite**
+- **Consultas SQL** para verificar el estado de la base de datos
+- Defectos documentados con entorno, pasos de reproducción, y resultado esperado vs. actual
 
 ---
 
-### 📄 `/docs`
-
-This folder centralizes all foundational project documentation.  
-It includes:
-
-- Requirements documents (for back-end, web, and mobile applications) used as the basis for all testing.
-- The visual mind map detailing the analysis and strategy.
-
----
-
-### 🧪 `/test-artifacts`
-
-The heart of the QA work.  
-Contains all testing materials designed and executed throughout the project, including:
-
-- **Test Cases:**  
-  Comprehensive documents with functional tests for the web app, mobile app, and APIs.
-- **SQL Queries:**  
-  Scripts used to query the database and verify that records were created, updated, and deleted correctly as a result of user actions.
-
----
-
-### 🐞 `/bug-reports`
-
-A dedicated directory documenting all defects, errors, and issues identified during the test cycles.  
-Each file in this folder represents an individual bug report, following a professional template to ensure clarity and reproducibility by the development team.
-
----
-
-## ✨ Why This Project Matters
-
-This project not only validates the functionality of Urban Scooter but also demonstrates:
-
-- A full-lifecycle QA process from planning to execution.
-- The ability to adapt testing approaches across multiple platforms.
-- Strong documentation practices to support collaboration and transparency.
-
----
-
-## 📬 Contact
-
-If you have any questions, suggestions, or would like to discuss this project further, feel free to connect via Discord or by opening an issue in this repository.
-
----
+> 📚 Final project developed as part of the **TripleTen QA Engineering Bootcamp** · Cohort 23 · Proyecto Final
